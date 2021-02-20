@@ -29,6 +29,9 @@
 /mnt/vendor/persist/engineermode/fpqrcode                                                          u:object_r:vendor_persist_fingerprint_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus    u:object_r:hal_fingerprint_default_exec:s0
 
+# IFAA
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.ifaa@2\.0-service                        u:object_r:hal_ifaa_default_exec:s0
+
 # Project Info
 /sys/project_info(/.*)?                                                                            u:object_r:sysfs_project_info:s0
 
