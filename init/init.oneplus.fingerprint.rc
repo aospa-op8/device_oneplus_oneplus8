@@ -21,5 +21,4 @@ on boot
     chmod 0666 /dev/qseecom
 
 on init
-    setprop vendor.boot.verifiedbootstate ${ro.boot.verifiedbootstate}
     setprop vendor.boot.hw_version ${ro.boot.hw_version}
