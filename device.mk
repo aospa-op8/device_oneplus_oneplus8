@@ -74,6 +74,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     com.dsi.ant@1.0.vendor \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
@@ -128,6 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm@1.4-service.clearkey
 
 # Dalvik
@@ -175,6 +178,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor
+
 # Incremental FS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=1
@@ -214,6 +221,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
@@ -221,6 +235,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -250,6 +268,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1.vendor \
 
 # Sensors
 PRODUCT_COPY_FILES += \
