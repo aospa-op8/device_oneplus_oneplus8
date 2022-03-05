@@ -27,10 +27,16 @@
 # Fingerprint
 /dev/goodix_fp                                                                                     u:object_r:fingerprint_device:s0
 /mnt/vendor/persist/engineermode/fpqrcode                                                          u:object_r:vendor_persist_fingerprint_file:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service.oneplus8    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus    u:object_r:hal_fingerprint_default_exec:s0
 
 # Project Info
 /sys/project_info(/.*)?                                                                            u:object_r:sysfs_project_info:s0
+
+# Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2.1-service\.multihal\.oneplus           u:object_r:hal_sensors_default_exec:s0
+
+# Vibrator
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oneplus                   u:object_r:hal_vibrator_default_exec:s0
 
 # Wakeups
 /sys/devices(/platform)?/soc/[0-9a-f]+.i2c/i2c-[0-9]+/[0-9]+-[0-9a-f]+/power_supply/op_charger/wakeup[0-9]+(/.*)?                                                                                                  u:object_r:sysfs_wakeup:s0
