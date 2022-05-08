@@ -472,12 +472,12 @@ vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|9bb0994cdbf80b14148d54
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|debd842a09148a1db1767a367bc87e4794e67bd3
 
 # Camera - OOS (OP8)
-vendor/lib64/camera/com.qti.sensor.gc2375.so|e0396d4218de7036a4cf97b5bd54f4aedc309fb6
-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin|8a090bf0633b5c3743408b2841ffb50b8fd40be4
-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin|3ff6bfb13f6eb40e7e48b14ad2d753a1196ca6fa
-vendor/lib64/camera/com.qti.sensormodule.shine_gc2375.bin|f095f8ee545d28fcba0b4d077f5f504cac3388fd
-vendor/lib64/camera/com.qti.tuned.ofilm_imx481.bin|cd72ff557fce4accb96e42050e930ffa7b00b988
-vendor/lib64/camera/com.qti.tuned.shine_gc2375.bin|5dd3a39b4ac5e1c656dae873b6b0e68b80fcf507
+-vendor/lib64/camera/com.qti.sensor.gc2375.so|e0396d4218de7036a4cf97b5bd54f4aedc309fb6
+-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin|8a090bf0633b5c3743408b2841ffb50b8fd40be4
+-vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin|3ff6bfb13f6eb40e7e48b14ad2d753a1196ca6fa
+-vendor/lib64/camera/com.qti.sensormodule.shine_gc2375.bin|f095f8ee545d28fcba0b4d077f5f504cac3388fd
+-vendor/lib64/camera/com.qti.tuned.ofilm_imx481.bin|cd72ff557fce4accb96e42050e930ffa7b00b988
+-vendor/lib64/camera/com.qti.tuned.shine_gc2375.bin|5dd3a39b4ac5e1c656dae873b6b0e68b80fcf507
 
 # Camera - CUSTOM PATCHED (OP8)
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|040754908683f59ee1b5b7f962f659fbed3a515a
