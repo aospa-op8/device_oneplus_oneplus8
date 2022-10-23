@@ -13,9 +13,7 @@
 # limitations under the License.
 
 # A/B
-ifneq ($(filter pa_oneplus8 pa_oneplus8pro,$(TARGET_PRODUCT)),)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota_retrofit.mk)
-endif
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -202,6 +200,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.power.rc \
     init.oneplus.telephony.rc \
     init.oneplus.usb.rc \
+    init.overlayfs.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.ufs.rc \
@@ -214,7 +213,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus8
+    device/oneplus/opkona
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -316,7 +315,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.sensors.enable.mag_filter=true
 
 # Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # SOC Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -338,7 +337,11 @@ PRODUCT_PACKAGES += \
     update_verifier
 
 # Vendor
-$(call inherit-product, vendor/oneplus/oneplus8/oneplus8-vendor.mk)
+$(call inherit-product, vendor/oneplus/opkona/opkona-vendor.mk)
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 # Verified Boot
 PRODUCT_COPY_FILES += \

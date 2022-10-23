@@ -470,15 +470,129 @@ vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|9bb0994cdbf80b14148d54
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|debd842a09148a1db1767a367bc87e4794e67bd3
 
 # Camera - OOS (OP8)
--vendor/lib64/camera/com.qti.sensor.gc2375.so|e0396d4218de7036a4cf97b5bd54f4aedc309fb6
--vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin|8a090bf0633b5c3743408b2841ffb50b8fd40be4
--vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin|3ff6bfb13f6eb40e7e48b14ad2d753a1196ca6fa
--vendor/lib64/camera/com.qti.sensormodule.shine_gc2375.bin|f095f8ee545d28fcba0b4d077f5f504cac3388fd
--vendor/lib64/camera/com.qti.tuned.ofilm_imx481.bin|cd72ff557fce4accb96e42050e930ffa7b00b988
--vendor/lib64/camera/com.qti.tuned.shine_gc2375.bin|5dd3a39b4ac5e1c656dae873b6b0e68b80fcf507
+vendor/lib64/camera/com.qti.sensor.gc2375.so:vendor/19821/lib64/camera/com.qti.sensor.gc2375.so
+vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin:vendor/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin
+vendor/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin:vendor/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin
+vendor/lib64/camera/com.qti.sensormodule.shine_gc2375.bin:vendor/19821/lib64/camera/com.qti.sensormodule.shine_gc2375.bin
+vendor/lib64/camera/com.qti.tuned.ofilm_imx481.bin:vendor/19821/lib64/camera/com.qti.tuned.ofilm_imx481.bin
+vendor/lib64/camera/com.qti.tuned.shine_gc2375.bin:vendor/19821/lib64/camera/com.qti.tuned.shine_gc2375.bin
 
-# Camera - CUSTOM PATCHED (OP8)
+# Camera - OOS (OP8P)
+vendor/etc/camera/ashdr/ncf_pack_imx586.ncf:vendor/19811/etc/camera/ashdr/ncf_pack_imx586.ncf
+vendor/etc/camera/ashdr/ncf_pack_imx689.ncf:vendor/19811/etc/camera/ashdr/ncf_pack_imx689.ncf
+vendor/etc/camera/ashdr/ncf_pack_s5k3m5.ncf:vendor/19811/etc/camera/ashdr/ncf_pack_s5k3m5.ncf
+vendor/etc/camera/darksight/darksight_main.bin:vendor/19811/etc/camera/darksight/darksight_main.bin
+vendor/etc/camera/darksight/darksight_ultrawide.bin:vendor/19811/etc/camera/darksight/darksight_ultrawide.bin
+vendor/etc/camera/calibrationOutput_IR.bin:vendor/19811/etc/camera/calibrationOutput_IR.bin
+vendor/etc/camera/calibrationOutput_uw.bin:vendor/19811/etc/camera/calibrationOutput_uw.bin
+vendor/etc/camera/calibrationOutput_wt.bin:vendor/19811/etc/camera/calibrationOutput_wt.bin
+vendor/etc/camera/distortion_result.bin:vendor/19811/etc/camera/distortion_result.bin
+vendor/etc/init/calibrationOutput_IR.rc:vendor/19811/etc/init/calibrationOutput_IR.rc
+vendor/etc/init/calibrationOutput_wt.rc:vendor/19811/etc/init/calibrationOutput_wt.rc
+vendor/lib64/camera/components/com.qti.node.eisv2.so:vendor/19811/lib64/camera/components/com.qti.node.eisv2.so
+vendor/lib64/camera/components/com.qti.node.eisv3.so:vendor/19811/lib64/camera/components/com.qti.node.eisv3.so
+vendor/lib64/camera/components/com.qti.stats.aec.so:vendor/19811/lib64/camera/components/com.qti.stats.aec.so
+vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:vendor/19811/lib64/camera/components/com.qti.stats.aecwrapper.so
+vendor/lib64/camera/components/com.qti.stats.af.so:vendor/19811/lib64/camera/components/com.qti.stats.af.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so:vendor/19811/lib64/camera/components/com.qti.stats.afwrapper.so
+vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:vendor/19811/lib64/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:vendor/19811/lib64/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib64/camera/components/com.qti.stats.tracker.so:vendor/19811/lib64/camera/components/com.qti.stats.tracker.so
+vendor/lib64/camera/components/com.qtistatic.stats.aec.so:vendor/19811/lib64/camera/components/com.qtistatic.stats.aec.so
+vendor/lib64/camera/components/com.qtistatic.stats.af.so:vendor/19811/lib64/camera/components/com.qtistatic.stats.af.so
+vendor/lib64/camera/components/com.qtistatic.stats.awb.so:vendor/19811/lib64/camera/components/com.qtistatic.stats.awb.so
+vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:vendor/19811/lib64/camera/components/com.qtistatic.stats.pdlib.so
+vendor/lib64/camera/com.qti.sensor.gc5035.so:vendor/19811/lib64/camera/com.qti.sensor.gc5035.so
+vendor/lib64/camera/com.qti.sensor.imx471.so:vendor/19811/lib64/camera/com.qti.sensor.imx471.so
+vendor/lib64/camera/com.qti.sensor.imx586.so:vendor/19811/lib64/camera/com.qti.sensor.imx586.so
+vendor/lib64/camera/com.qti.sensor.imx689.so:vendor/19811/lib64/camera/com.qti.sensor.imx689.so
+vendor/lib64/camera/com.qti.sensor.s5k3m5.so:vendor/19811/lib64/camera/com.qti.sensor.s5k3m5.so
+vendor/lib64/camera/com.qti.sensormodule.semco_imx586.bin:vendor/19811/lib64/camera/com.qti.sensormodule.semco_imx586.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin:vendor/19811/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_imx689.bin:vendor/19811/lib64/camera/com.qti.sensormodule.semco_imx689.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin:vendor/19811/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin:vendor/19811/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin
+vendor/lib64/camera/com.qti.sensormodule.shine_gc5035.bin:vendor/19811/lib64/camera/com.qti.sensormodule.shine_gc5035.bin
+vendor/lib64/camera/com.qti.sensormodule.truly_imx471.bin:vendor/19811/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+vendor/lib64/camera/com.qti.tuned.semco_imx586.bin:vendor/19811/lib64/camera/com.qti.tuned.semco_imx586.bin
+vendor/lib64/camera/com.qti.tuned.semco_imx586_BG.bin:vendor/19811/lib64/camera/com.qti.tuned.semco_imx586_BG.bin
+vendor/lib64/camera/com.qti.tuned.semco_imx689.bin:vendor/19811/lib64/camera/com.qti.tuned.semco_imx689.bin
+vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin:vendor/19811/lib64/camera/com.qti.tuned.semco_s5k3m5.bin
+vendor/lib64/camera/com.qti.tuned.shine_gc5035.bin:vendor/19811/lib64/camera/com.qti.tuned.shine_gc5035.bin
+vendor/lib64/camera/com.qti.tuned.truly_imx471.bin:vendor/19811/lib64/camera/com.qti.tuned.truly_imx471.bin
+vendor/lib64/hw/camera.qcom.so:vendor/19811/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so:vendor/19811/lib64/hw/com.qti.chi.override.so
+
+# Camera - OOS (OP9R)
+vendor/etc/camera/ashdr/ncf_pack_imx481.ncf:vendor/20828/etc/camera/ashdr/ncf_pack_imx481.ncf
+vendor/etc/camera/ashdr/ncf_pack_imx586.ncf:vendor/20828/etc/camera/ashdr/ncf_pack_imx586.ncf
+vendor/etc/camera/calibrationOutput_uw.bin:vendor/20828/etc/camera/calibrationOutput_uw.bin
+vendor/etc/camera/distortion_result.bin:vendor/20828/etc/camera/distortion_result.bin
+vendor/etc/init/calibrationOutput_uw.rc:vendor/20828/etc/init/calibrationOutput_uw.rc
+vendor/lib64/camera/components/com.oneplus.node.cfrsnapshot.so:vendor/20828/lib64/camera/components/com.oneplus.node.cfrsnapshot.so
+vendor/lib64/camera/components/com.oneplus.node.cfrvideo.so:vendor/20828/lib64/camera/components/com.oneplus.node.cfrvideo.so
+vendor/lib64/camera/components/com.oneplus.node.memcpy.so:vendor/20828/lib64/camera/components/com.oneplus.node.memcpy.so
+vendor/lib64/camera/components/com.oneplus.node.preview.so:vendor/20828/lib64/camera/components/com.oneplus.node.preview.so
+vendor/lib64/camera/components/com.oneplus.node.preview_nv.so:vendor/20828/lib64/camera/components/com.oneplus.node.preview_nv.so
+vendor/lib64/camera/components/com.oneplus.node.rtb.so:vendor/20828/lib64/camera/components/com.oneplus.node.rtb.so
+vendor/lib64/camera/components/com.oneplus.node.sat.so:vendor/20828/lib64/camera/components/com.oneplus.node.sat.so
+vendor/lib64/camera/components/com.qti.node.eisv2.so:vendor/20828/lib64/camera/components/com.qti.node.eisv2.so
+vendor/lib64/camera/components/com.qti.node.eisv3.so:vendor/20828/lib64/camera/components/com.qti.node.eisv3.so
+vendor/lib64/camera/components/com.qti.stats.aec.so:vendor/20828/lib64/camera/components/com.qti.stats.aec.so
+vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:vendor/20828/lib64/camera/components/com.qti.stats.aecwrapper.so
+vendor/lib64/camera/components/com.qti.stats.af.so:vendor/20828/lib64/camera/components/com.qti.stats.af.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so:vendor/20828/lib64/camera/components/com.qti.stats.afwrapper.so
+vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:vendor/20828/lib64/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:vendor/20828/lib64/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib64/camera/components/com.qti.stats.tracker.so:vendor/20828/lib64/camera/components/com.qti.stats.tracker.so
+vendor/lib64/camera/components/com.qtistatic.stats.aec.so:vendor/20828/lib64/camera/components/com.qtistatic.stats.aec.so
+vendor/lib64/camera/components/com.qtistatic.stats.af.so:vendor/20828/lib64/camera/components/com.qtistatic.stats.af.so
+vendor/lib64/camera/components/com.qtistatic.stats.awb.so:vendor/20828/lib64/camera/components/com.qtistatic.stats.awb.so
+vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:vendor/20828/lib64/camera/components/com.qtistatic.stats.pdlib.so
+vendor/lib64/camera/com.qti.sensor.gc02m1b.so:vendor/20828/lib64/camera/com.qti.sensor.gc02m1b.so
+vendor/lib64/camera/com.qti.sensor.imx471.so:vendor/20828/lib64/camera/com.qti.sensor.imx471.so
+vendor/lib64/camera/com.qti.sensor.imx481.so:vendor/20828/lib64/camera/com.qti.sensor.imx481.so
+vendor/lib64/camera/com.qti.sensor.imx586.so:vendor/20828/lib64/camera/com.qti.sensor.imx586.so
+vendor/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin:vendor/20828/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin
+vendor/lib64/camera/com.qti.sensormodule.qtech_imx481.bin:vendor/20828/lib64/camera/com.qti.sensormodule.qtech_imx481.bin
+vendor/lib64/camera/com.qti.sensormodule.semco_imx586.bin:vendor/20828/lib64/camera/com.qti.sensormodule.semco_imx586.bin
+vendor/lib64/camera/com.qti.sensormodule.truly_imx471.bin:vendor/20828/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+vendor/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin:vendor/20828/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin
+vendor/lib64/camera/com.qti.tuned.qtech_imx481.bin:vendor/20828/lib64/camera/com.qti.tuned.qtech_imx481.bin
+vendor/lib64/camera/com.qti.tuned.semco_imx586.bin:vendor/20828/lib64/camera/com.qti.tuned.semco_imx586.bin
+vendor/lib64/camera/com.qti.tuned.truly_imx471.bin:vendor/20828/lib64/camera/com.qti.tuned.truly_imx471.bin
+vendor/lib64/hw/camera.qcom.so:vendor/20828/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so:vendor/20828/lib64/hw/com.qti.chi.override.so
+vendor/lib64/com.qti.feature2.anchorsync.so:vendor/20828/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.demux.so:vendor/20828/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.frameselect.so:vendor/20828/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.fusion.so:vendor/20828/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.generic.so:vendor/20828/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.gs.so:vendor/20828/lib64/com.qti.feature2.gs.so
+vendor/lib64/com.qti.feature2.hdr.so:vendor/20828/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.memcpy.so:vendor/20828/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.mfsr.so:vendor/20828/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.qcfa.so:vendor/20828/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.rawhdr.so:vendor/20828/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.rt.so:vendor/20828/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.serializer.so:vendor/20828/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.feature2.stub.so:vendor/20828/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.swmf.so:vendor/20828/lib64/com.qti.feature2.swmf.so
+vendor/lib64/libVDSuperPhotoAPI.so:vendor/20828/lib64/libVDSuperPhotoAPI.so
+vendor/lib64/libarcsoft_hdr_couple_api.so:vendor/20828/lib64/libarcsoft_hdr_couple_api.so
+vendor/lib64/libarcsoft_hdr_denoise_api_v4.so:vendor/20828/lib64/libarcsoft_hdr_denoise_api_v4.so
+vendor/lib64/libarcsoft_high_dynamic_range_couple.so:vendor/20828/lib64/libarcsoft_high_dynamic_range_couple.so
+vendor/lib64/libarcsoft_high_dynamic_range_v4.so:vendor/20828/lib64/libarcsoft_high_dynamic_range_v4.so
+vendor/lib64/libcamerapostproc.so:vendor/20828/lib64/libcamerapostproc.so
+vendor/lib64/libdualcam_image_optical_zoom.so:vendor/20828/lib64/libdualcam_image_optical_zoom.so
+vendor/lib64/libdualcam_optical_zoom_control.so:vendor/20828/lib64/libdualcam_optical_zoom_control.so
+vendor/lib64/libdualcam_video_optical_zoom.so:vendor/20828/lib64/libdualcam_video_optical_zoom.so
+
+# Camera - OSS
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|040754908683f59ee1b5b7f962f659fbed3a515a
+
+# Charging - OOS (OP8P)
+vendor/bin/wlchgd:vendor/19811/bin/wlchgd
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -583,6 +697,21 @@ vendor/lib64/fp_hal_extension.so|348eb1bda78daa7c1595b6f474045d371c499162
 vendor/lib64/libgf_g6_ud_hal.so|0455db5f5e2a19a3ce62ee744da10def80a65c7b
 vendor/lib64/libgf_ud_hal.so|c919097314a356b644a22a1b75da9654980c2852
 vendor/lib64/libhvx_proxy_stub.so|b8971770e3a6aaf0b2992aca04e3a0f162868e67
+
+# Fingerprint - OOS (OP8P)
+vendor/lib64/hw/goodix.fod.kona.so:vendor/19811/lib64/hw/goodix.fod.kona.so
+vendor/lib64/hw/goodix.g6.fod.kona.so:vendor/19811/lib64/hw/goodix.g6.fod.kona.so
+vendor/lib64/fp_hal_extension.so:vendor/19811/lib64/fp_hal_extension.so
+vendor/lib64/libgf_g6_ud_hal.so:vendor/19811/lib64/libgf_g6_ud_hal.so
+vendor/lib64/libgf_ud_hal.so:vendor/19811/lib64/libgf_ud_hal.so
+
+# Fingerprint - OOS (OP9R)
+vendor/lib64/hw/goodix.fod.kona.so:vendor/20828/lib64/hw/goodix.fod.kona.so
+vendor/lib64/hw/goodix.g6.fod.kona.so:vendor/20828/lib64/hw/goodix.g6.fod.kona.so
+vendor/lib64/fp_hal_extension.so:vendor/20828/lib64/fp_hal_extension.so
+vendor/lib64/libgf_g6_ud_hal.so:vendor/20828/lib64/libgf_g6_ud_hal.so
+vendor/lib64/libgf_ud_hal.so:vendor/20828/lib64/libgf_ud_hal.so
+vendor/lib64/libhvx_proxy_stub.so:vendor/20828/lib64/libhvx_proxy_stub.so
 
 # Hotword - OOS
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|aca670c20dfee58a96a471b64ea7d63a0a3fb812
@@ -1086,6 +1215,21 @@ vendor/lib64/libsns_registry_skel.so|c150b630484b263698526c41bbbe2bc4f564f099
 vendor/lib64/libssc.so|383307d598c83f1f99625c19a8600a48953a2ef6
 vendor/lib64/sensors.hal.tof.so|6b11c7b2f7afbe6b13f3672671a9458f9f9f0728
 vendor/lib64/sensors.ssc.so|a0f7667f3af156aaf3ab9c779fb3ed2bfb554473
+
+# SNS - OOS (OP8P)
+vendor/etc/sensors/config/kona_T0_tcs3408.json:vendor/19811/etc/sensors/config/kona_T0_tcs3408.json
+vendor/etc/sensors/config/kona_tcs3408.json:vendor/19811/etc/sensors/config/kona_tcs3408.json
+
+# SNS - OOS (OP9R)
+vendor/etc/sensors/config/kona_T0_sx9324_0.json:vendor/20828/etc/sensors/config/kona_T0_sx9324_0.json
+vendor/etc/sensors/config/kona_T0_sx9324up_0.json:vendor/20828/etc/sensors/config/kona_T0_sx9324up_0.json
+vendor/etc/sensors/config/kona_bmi26x_0.json:vendor/20828/etc/sensors/config/kona_bmi26x_0.json
+vendor/etc/sensors/config/kona_bmp380_0.json:vendor/20828/etc/sensors/config/kona_bmp380_0.json
+vendor/etc/sensors/config/kona_mmc5603x_0.json:vendor/20828/etc/sensors/config/kona_mmc5603x_0.json
+vendor/etc/sensors/config/kona_sx9324_0.json:vendor/20828/etc/sensors/config/kona_sx9324_0.json
+vendor/etc/sensors/config/kona_sx9324up_0.json:vendor/20828/etc/sensors/config/kona_sx9324up_0.json
+vendor/etc/sensors/config/kona_tcs3408.json:vendor/20828/etc/sensors/config/kona_tcs3408.json
+vendor/lib64/sensors.hal.tof.so:vendor/20828/lib64/sensors.hal.tof.so
 
 # SNS (Calibration) - OOS
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|afcdd4bed3e2edb5eee12621144791461b2d585f

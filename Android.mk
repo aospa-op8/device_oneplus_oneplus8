@@ -16,8 +16,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-ifneq ($(filter oneplus8 oneplus8pro oneplus8t op8r,$(TARGET_DEVICE)),)
-
 # Symlinks
 CNE_SYMLINKS := $(TARGET_OUT_VENDOR_APPS)/CneApp/lib/arm64/
 $(CNE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -115,5 +113,3 @@ ALL_DEFAULT_INSTALLED_MODULES += \
     $(RFS_MDM_SLPI_SYMLINKS) \
     $(RFS_MDM_TN_SYMLINKS) \
     $(WLAN_FIRMWARE_SYMLINKS)
-
-endif

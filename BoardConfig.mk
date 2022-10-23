@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/oneplus/oneplus8
+DEVICE_PATH := device/oneplus/opkona
 
 # A/B
 AB_OTA_UPDATER := true
@@ -50,6 +50,9 @@ TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|LE2100|LE2101|KB2000|KB2001|KB2003|KB2005|KB2007|OnePlus8|instantnoodle|OnePlus8Pro|instantnoodlep
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
@@ -113,7 +116,7 @@ KERNEL_DEFCONFIG := vendor/$(TARGET_BOARD_PLATFORM)-perf_defconfig
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := OnePlus8,oneplus8
+TARGET_OTA_ASSERT_DEVICE := OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|LE2100|LE2101|KB2000|KB2001|KB2003|KB2005|KB2007|OnePlus8|instantnoodle|OnePlus8Pro|instantnoodlep
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x6000000

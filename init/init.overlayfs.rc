@@ -1,0 +1,49 @@
+on post-fs-data && property:ro.boot.prj_version=19821 
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/19821/lib64/camera:/vendor/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=19855                                         
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/19821/lib64/camera:/vendor/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=19867                                         
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/19821/lib64/camera:/vendor/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=19811  
+    mount overlay overlay /vendor/bin/ lowerdir=/vendor/19811/bin:/vendor/bin
+    mount overlay overlay /vendor/etc/camera lowerdir=/vendor/19811/etc/camera:/vendor/etc/camera
+    mount overlay overlay /vendor/etc/init lowerdir=/vendor/19811/etc/init:/vendor/etc/init
+    mount overlay overlay /vendor/etc/sensors lowerdir=/vendor/19811/etc/sensors:/vendor/etc/sensors
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/19811/lib64:/vendor/lib64
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/19811/lib64/camera:/vendor/lib64/camera
+    mount overlay overlay /vendor/lib64/hw lowerdir=/vendor/19811/lib64/hw:/vendor/lib64/hw
+
+on post-fs-data && property:ro.boot.prj_version=20828  
+    mount overlay overlay /vendor/etc/camera lowerdir=/vendor/20828/etc/camera:/vendor/etc/camera
+    mount overlay overlay /vendor/etc/init lowerdir=/vendor/20828/etc/init:/vendor/etc/init
+    mount overlay overlay /vendor/etc/sensors lowerdir=/vendor/20828/etc/sensors:/vendor/etc/sensors
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/20828/lib64:/vendor/lib64
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/20828/lib64/camera:/vendor/lib64/camera
+    mount overlay overlay /vendor/lib64/hw lowerdir=/vendor/20828/lib64/hw:/vendor/lib64/hw
+
+on post-fs-data && property:ro.boot.prj_version=19805                                         
+    mount overlay overlay /vendor/etc/camera lowerdir=/vendor/20828/etc/camera:/vendor/etc/camera
+    mount overlay overlay /vendor/etc/init lowerdir=/vendor/20828/etc/init:/vendor/etc/init
+    mount overlay overlay /vendor/etc/sensors lowerdir=/vendor/20828/etc/sensors:/vendor/etc/sensors
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/20828/lib64:/vendor/lib64
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/20828/lib64/camera:/vendor/lib64/camera
+    mount overlay overlay /vendor/lib64/hw lowerdir=/vendor/20828/lib64/hw:/vendor/lib64/hw
+
+on post-fs-data && property:ro.boot.prj_version=20809                                         
+    mount overlay overlay /vendor/etc/camera lowerdir=/vendor/20828/etc/camera:/vendor/etc/camera
+    mount overlay overlay /vendor/etc/init lowerdir=/vendor/20828/etc/init:/vendor/etc/init
+    mount overlay overlay /vendor/etc/sensors lowerdir=/vendor/20828/etc/sensors:/vendor/etc/sensors
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/20828/lib64:/vendor/lib64
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/20828/lib64/camera:/vendor/lib64/camera
+    mount overlay overlay /vendor/lib64/hw lowerdir=/vendor/20828/lib64/hw:/vendor/lib64/hw
+
+on post-fs-data && property:ro.boot.prj_version=20838                                         
+    mount overlay overlay /vendor/etc/camera lowerdir=/vendor/20828/etc/camera:/vendor/etc/camera
+    mount overlay overlay /vendor/etc/init lowerdir=/vendor/20828/etc/init:/vendor/etc/init
+    mount overlay overlay /vendor/etc/sensors lowerdir=/vendor/20828/etc/sensors:/vendor/etc/sensors
+    mount overlay overlay /vendor/lib64 lowerdir=/vendor/20828/lib64:/vendor/lib64
+    mount overlay overlay /vendor/lib64/camera lowerdir=/vendor/20828/lib64/camera:/vendor/lib64/camera
+    mount overlay overlay /vendor/lib64/hw lowerdir=/vendor/20828/lib64/hw:/vendor/lib64/hw

@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=oneplus8
+DEVICE=opkona
 VENDOR=oneplus
 
 # Load extract utilities and do some sanity checks.
