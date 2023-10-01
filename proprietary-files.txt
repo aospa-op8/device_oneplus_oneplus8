@@ -625,12 +625,6 @@ vendor/lib64/libhvx_proxy_stub.so|b8971770e3a6aaf0b2992aca04e3a0f162868e67
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
-# IFAA - OOS
--system_ext/priv-app/IFAAService/IFAAService.apk|8c8baca2cf6fcfdf1e727436fb6b9b2d888fed75
-vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so|9ccac456a9f05cce8aa339965bec673f06395467
-vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service|8c715bc2dd0fcae870050abc8bdaee99043d554f
-vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc|17f485f5523372cc627503f36f1e84348233b777
-
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
