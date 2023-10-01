@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
+# Authsecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor
+
 # Biometrics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -126,8 +130,17 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Crypto
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.crypto.allow_encrypt_override=true
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key
+
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
 # DRM
@@ -163,15 +176,8 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
-# GPS
-LOC_HIDL_VERSION = 4.0
-
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
-
-# Gatekeeper
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.gatekeeper.disable_spu=true
 
 # Health
 PRODUCT_PACKAGES += \
@@ -204,25 +210,6 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.target.rc \
     ueventd.oneplus.rc
-
-# Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.volume.filenames_mode="aes-256-cts" \
-    ro.crypto.allow_encrypt_override=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.dm_default_key.options_format.version=2 \
-    ro.crypto.volume.metadata.method=dm-default-key
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.keystore_desede=true
-
-PRODUCT_PACKAGES += \
-    android.hardware.authsecret@1.0.vendor \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@4.1 \
-    android.hardware.keymaster@4.1.vendor
 
 # lmkd
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -269,7 +256,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qspm.enable=true
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    alarm \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    keymaster \
+    media \
+    nfc \
+    overlay \
+    perf \
+    qseecomd \
+    telephony \
+    usb \
+    wfd \
+    wlan
 
 # RIL
 PRODUCT_PACKAGES += \
