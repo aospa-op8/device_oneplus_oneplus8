@@ -10,6 +10,4 @@ allow tri-state-key_daemon vendor_sysfs_tri_state_key:file { setattr w_file_perm
 
 allow tri-state-key_daemon mnt_vendor_file:dir search;
 
-allow tri-state-key_daemon vendor_persist_engineer_file:dir search;
-
 r_dir_file(tri-state-key_daemon, vendor_persist_tri_state_key_file)
