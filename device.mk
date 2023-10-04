@@ -38,9 +38,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Alert Slider
 PRODUCT_PACKAGES += \
-    OnePlusFrameworksOverlay \
     TriStateHandler \
-    tri-state-key_daemon.vendor
+    tri-state-key_daemon
 
 # Attestation
 PRODUCT_COPY_FILES += \
@@ -59,13 +58,19 @@ PRODUCT_PACKAGES += \
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
+    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oneplus \
+    android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
+    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor \
-    vendor.oneplus.hardware.display@1.0.vendor
+    vendor.oneplus.fingerprint.extension@1.0.vendor
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.sys.fod.pos.x=453 \
+    persist.sys.fod.pos.y=1823 \
+    persist.sys.fod.size=174
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.boot.fingerprintbstate=orange
@@ -167,6 +172,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
+# Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.pickup=oneplus.sensor.op_motion_detect
+
 # Factory Reset Protection
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
@@ -217,7 +229,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/common \
     device/oneplus/oneplus8
 
 # Netflix
@@ -305,7 +316,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal.oneplus \
+    android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -346,7 +357,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus
+    vendor.qti.hardware.vibrator.service.oneplus8
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
