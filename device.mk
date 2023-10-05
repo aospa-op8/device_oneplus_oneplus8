@@ -346,7 +346,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oneplus8
+    android.hardware.vibrator-V1-ndk.vendor
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
