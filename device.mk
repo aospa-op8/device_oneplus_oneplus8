@@ -235,6 +235,7 @@ PRODUCT_PACKAGES += \
     OnePlus8SeriesSettings \
     OnePlus8SeriesSystemUI \
     OnePlus8SystemUI \
+    OnePlus9RSystemUI \
     WifiResTarget
 
 # Partitions
