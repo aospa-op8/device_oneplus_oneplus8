@@ -34,7 +34,7 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
-    auto prj_version = std::stoi(GetProperty("ro.boot.prj_version", "0"));
+    auto prj_version = std::stoi(GetProperty("ro.boot.project_name", "0"));
 
 
     switch(prj_version){
