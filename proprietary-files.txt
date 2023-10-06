@@ -681,6 +681,10 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Display - OOS
+vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service
+vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc
+
 # FASTCV
 -vendor/lib/libfastcvopt.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
