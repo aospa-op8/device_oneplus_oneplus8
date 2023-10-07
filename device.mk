@@ -225,7 +225,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAOnePlus8SeriesFrameworks \
-    AOSPAOnePlus8SeriesSettings \
     AOSPAOnePlus8SeriesSystemUI \
     AOSPAOnePlus8SystemUI \
     FrameworksResTarget \
