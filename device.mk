@@ -61,10 +61,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oneplus \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.qfp=true \
     vendor.boot.fingerprintbstate=orange
 
 # Bluetooth
@@ -324,6 +324,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8250
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    device/oneplus/common
+
 # System Helper
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
@@ -351,7 +356,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk.vendor
+    vendor.qti.hardware.vibrator.service.oneplus
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30

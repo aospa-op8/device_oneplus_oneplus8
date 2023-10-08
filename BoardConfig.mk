@@ -58,7 +58,7 @@ TARGET_OTA_ASSERT_DEVICE := OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|LE210
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
 # Biometrics
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //device/oneplus/common:libudfps_extension.oneplus
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kona
