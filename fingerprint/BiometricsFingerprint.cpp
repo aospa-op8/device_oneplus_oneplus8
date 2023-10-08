@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service"
+
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.oneplus"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.oneplus"
 
 #include <hardware/hw_auth_token.h>
 
@@ -179,7 +180,7 @@ FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(
             if (info >= FINGERPRINT_ACQUIRED_VENDOR_BASE) {
                 // vendor specific code.
                 *vendorCode = info - FINGERPRINT_ACQUIRED_VENDOR_BASE;
-                return FingerprintAcquiredInfo::ACQUIRED_GOOD;
+                return FingerprintAcquiredInfo::ACQUIRED_VENDOR;
             }
     }
     ALOGE("Unknown acquiredmsg from fingerprint vendor library: %d", info);

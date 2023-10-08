@@ -12,9 +12,13 @@
 #endif
 
 uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
+#ifdef FOD_PRESSED_LAYER_ZORDER
     return touched ? z | FOD_PRESSED_LAYER_ZORDER : z;
+#else
+    return touched ? 0xfc8 : z;
+#endif
 }
 
-uint64_t getUdfpsUsageBits(uint64_t usageBits, bool /*touched*/) {
+uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) {
     return usageBits;
 }
