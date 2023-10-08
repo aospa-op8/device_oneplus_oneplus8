@@ -4,12 +4,12 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.systemui.oneplus9r">
+    package="android.overlay.oneplus9r.target">
 
     <overlay
         android:isStatic="true"
         android:priority="850"
         android:requiredSystemPropertyName="ro.oneplus.project"
         android:requiredSystemPropertyValue="OP9R"
-        android:targetPackage="com.android.systemui" />
+        android:targetPackage="android" />
 </manifest>

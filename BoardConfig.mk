@@ -88,6 +88,9 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oneplus
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.boot_devices=soc/1d84000.ufshc \

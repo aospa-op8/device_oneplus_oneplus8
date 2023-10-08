@@ -25,4 +25,8 @@
     -->
     <integer name="config_udfps_hbm_type">0</integer>
 
+    <!-- Trigger onFingerDown for action down events. This is a workaround for certain devices
+         that have UDFPS delays without the commit present and should be false by default. -->
+    <bool name="config_udfpsTriggerOnFingerDownForActionDown">true</bool>
+
 </resources>

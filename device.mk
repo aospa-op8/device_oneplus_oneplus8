@@ -225,10 +225,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAOnePlus8SeriesFrameworks \
-        AOSPAOnePlus8SeriesSystemUI \
+    AOSPAOnePlus8SeriesSystemUI \
     AOSPAOnePlus8SystemUI \
     FrameworksResTarget \
     OnePlus8Frameworks \
+    OnePlus9RFrameworks \
     OnePlus8SeriesFrameworks \
     OnePlus8SeriesSettings \
     OnePlus8SeriesSystemUI \

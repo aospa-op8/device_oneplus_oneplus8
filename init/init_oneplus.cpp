@@ -130,7 +130,7 @@ void vendor_load_properties() {
     case 19805:
 	OverrideProperty("ro.product.product.device", "OnePlus8T");
 	OverrideProperty("bluetooth.device.default_name", "OnePlus 8T");
-  OverrideProperty("ro.oneplus.project", "OP8T");
+  OverrideProperty("ro.oneplus.project", "OP9R");
       switch (rf_version){
            /* China */
         case 11:
